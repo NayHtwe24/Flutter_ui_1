@@ -95,7 +95,7 @@ class _MyHomeState extends State<MyHome> {
           children: <Widget>[
             Container(
               width: double.infinity,
-              height: MediaQuery.of(context).size.height / 3,
+              height: MediaQuery.of(context).size.height / 3.5,
               child: Container(
                 child: Stack(
                   children: <Widget>[
@@ -219,29 +219,137 @@ class _MyHomeState extends State<MyHome> {
                       Expanded(
                         child: Container(
                           width: 150,
-                          height: 180,
+                          height: 170,
                           child: Card(
                             elevation: 3,
                             color: Colors.white,
                             shape: RoundedRectangleBorder(
                               borderRadius: BorderRadius.circular(5.0),
                             ),
+                            child: Center(
+                              child: Container(
+                                child: Column(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: <Widget>[
+                                    Container(
+                                      child: Container(
+                                        height: 40,
+                                        width: 40,
+                                        child: Icon(
+                                            Icons.attach_money,
+                                            size: 20,
+                                            color: Colors.green,
+                                        ),
+                                        decoration: BoxDecoration(
+                                          color: Colors.tealAccent,
+                                          shape: BoxShape.circle,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Column(
+                                        children: <Widget>[
+                                          Padding(
+                                            padding: EdgeInsets.all(3.0),
+                                          ),
+                                          Container(
+                                            child: Text(
+                                                "Send Money",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 13,
+                                                    color: Colors.grey
+                                                )),
+                                          ),
+                                          Padding(
+                                            padding: EdgeInsets.all(3.0),
+                                          ),
+                                          Container(
+                                            child: Text(
+                                                "\$80.50",
+                                                style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    fontSize: 15,
+                                                    color: Colors.black
+                                                )),
+                                          )
+                                        ],
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                       ),
-                    Expanded(
-                      child: Container(
-                        width: 150,
-                        height: 180,
-                        child: Card(
-                          elevation: 3,
-                          color: Colors.white,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5.0),
+                        Expanded(
+                          child: Container(
+                            width: 150,
+                            height: 170,
+                            child: Card(
+                              elevation: 3,
+                              color: Colors.white,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5.0),
+                              ),
+                              child: Center(
+                                child: Container(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Container(
+                                          height: 40,
+                                          width: 40,
+                                          child: Icon(
+                                            Icons.credit_card,
+                                            size: 20,
+                                            color: Colors.brown,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.tealAccent,
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "Pay Items",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 13,
+                                                      color: Colors.grey
+                                                  )),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "\$150.15",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 15,
+                                                      color: Colors.black
+                                                  )),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
-                      ),
-                    )
                       ],
                     ),
                   ),
@@ -253,12 +361,66 @@ class _MyHomeState extends State<MyHome> {
                         Expanded(
                           child: Container(
                             width: 150,
-                            height: 180,
+                            height: 170,
                             child: Card(
                               elevation: 3,
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.0),
+                              ),
+                              child: Center(
+                                child: Container(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Container(
+                                          height: 40,
+                                          width: 40,
+                                          child: Icon(
+                                            Icons.card_membership,
+                                            size: 20,
+                                            color: Colors.black,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.tealAccent,
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "Top Up",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 13,
+                                                      color: Colors.grey
+                                                  )),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "\$60.32",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 15,
+                                                      color: Colors.black
+                                                  )),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
                               ),
                             ),
                           ),
@@ -266,16 +428,70 @@ class _MyHomeState extends State<MyHome> {
                         Expanded(
                           child: Container(
                             width: 150,
-                            height: 180,
+                            height: 170,
                             child: Card(
                               elevation: 3,
                               color: Colors.white,
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5.0),
                               ),
+                              child: Center(
+                                child: Container(
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    children: <Widget>[
+                                      Container(
+                                        child: Container(
+                                          height: 40,
+                                          width: 40,
+                                          child: Icon(
+                                            Icons.screen_share,
+                                            size: 20,
+                                            color: Colors.blue,
+                                          ),
+                                          decoration: BoxDecoration(
+                                            color: Colors.tealAccent,
+                                            shape: BoxShape.circle,
+                                          ),
+                                        ),
+                                      ),
+                                      Container(
+                                        child: Column(
+                                          children: <Widget>[
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "Request Money",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 13,
+                                                      color: Colors.grey
+                                                  )),
+                                            ),
+                                            Padding(
+                                              padding: EdgeInsets.all(3.0),
+                                            ),
+                                            Container(
+                                              child: Text(
+                                                  "\$90.20",
+                                                  style: TextStyle(
+                                                      fontWeight: FontWeight.bold,
+                                                      fontSize: 15,
+                                                      color: Colors.black
+                                                  )),
+                                            )
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
